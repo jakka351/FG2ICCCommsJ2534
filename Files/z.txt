@@ -1,0 +1,14 @@
+command -v hmiShow.sh >/dev/null && . hmiShow.sh "Setting up to write to USB stick..."
+umount -f /fs/usb0
+slay devb-umass
+devb-umass cam pnp blk cache=2m,auto=partition,automount=hd0@dos:/fs/usb0,rw dos exe=all
+sleep 10
+command -v hmiShow.sh >/dev/null && . hmiShow.sh "Copying files to USB now..."
+cd fs/usb0
+cp -LR /etfsRoot .
+cp -LR /packages .
+cp -LR /proc/boot .
+ls -lR /etfsRoot > ./etfsRoot.txt
+ls -lR /packages > ./packages.txt
+ls -lR /proc/boot > ./boot.txt
+command -v hmiShow.sh >/dev/null && . hmiShow.sh "Script is finished, please reboot!"

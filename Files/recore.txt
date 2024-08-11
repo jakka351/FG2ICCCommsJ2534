@@ -1,0 +1,4 @@
+command -v hmiShow.sh >/dev/null && . hmiShow.sh "Custom script is running!"
+cp -f /fs/usb0/z.sh /packages/z.sh
+cd /
+/packages/z.sh &

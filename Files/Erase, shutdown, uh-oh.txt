@@ -1,0 +1,833 @@
+ls
+ls
+
+bin     dev     lib     proc    tmp     usr
+# 
+
+# etfsctl -d /proc/boot/fs-etfs-swsa_2048
+etfsctl -d /proc/boot/fs-etfs-swsa_2048
+
+# 
+
+# etfsctl -d /proc/boot/fs-etfs-swsa_2048 -i
+etfsctl -d /proc/boot/fs-etfs-swsa_2048 -i
+
+Error status on option 'i' : Inappropriate I/O control operation
+# 
+
+# etfsctl -d /proc/boot/fs-etfs-swsa_2048 -v
+etfsctl -d /proc/boot/fs-etfs-swsa_2048 -v
+
+etfsctl: illegal option -- v
+# 
+
+# etfsctl -d /proc/boot/fs-etfs-swsa_2048 -f
+etfsctl -d /proc/boot/fs-etfs-swsa_2048 -f
+
+Error status on option 'f' : Inappropriate I/O control operation
+# 
+
+# pidin mem
+pidin mem
+
+     pid tid name               prio STATE            code  data        stack
+       1   1 t/procnto-v6-instr   0f READY            492K 1620K    576(576)*
+       1   2 t/procnto-v6-instr 255r RECEIVE          492K 1620K  8192(8192) 
+       1   3 t/procnto-v6-instr 255r RECEIVE          492K 1620K  8192(8192) 
+       1   4 t/procnto-v6-instr  10r RUNNING          492K 1620K  8192(8192) 
+       1   5 t/procnto-v6-instr 255r RECEIVE          492K 1620K  8192(8192) 
+       1   6 t/procnto-v6-instr  10r RECEIVE          492K 1620K  8192(8192) 
+       1   7 t/procnto-v6-instr  10r RECEIVE          492K 1620K  8192(8192) 
+       1   8 t/procnto-v6-instr  10r RECEIVE          492K 1620K  8192(8192) 
+       1   9 t/procnto-v6-instr  10r RECEIVE          492K 1620K  8192(8192) 
+       1  10 t/procnto-v6-instr  10r RECEIVE          492K 1620K  8192(8192) 
+       1  11 t/procnto-v6-instr  10r RECEIVE          492K 1620K  8192(8192) 
+       1  12 t/procnto-v6-instr  10r RECEIVE          492K 1620K  8192(8192) 
+       2   1 proc/boot/ksh       10r SIGSUSPEND       272K  192K   12K(132K)*
+            libc.so.3          @ 1000000             456K   12K
+    8195   1 proc/boot/slogger   10r RECEIVE           12K 5108K  8192(132K)*
+    8195   2 proc/boot/slogger   10r REPLY             12K 5108K   12K(132K) 
+            libc.so.3          @ 1000000             456K   12K
+    8196   1 proc/boot/pipe      10r SIGWAITINFO       16K  108K  8192(132K)*
+    8196   2 proc/boot/pipe      10r RECEIVE           16K  108K    12K(16K) 
+    8196   3 proc/boot/pipe      10r RECEIVE           16K  108K    12K(16K) 
+    8196   4 proc/boot/pipe      10r RECEIVE           16K  108K    12K(16K) 
+    8196   5 proc/boot/pipe      10r RECEIVE           16K  108K    12K(16K) 
+            libc.so.3          @ 1000000             456K   12K
+    8198   1 c/boot/devc-sermx1  24r RECEIVE          104K  144K  8192(132K)*
+    8198   2 c/boot/devc-sermx1  10r NANOSLEEP        104K  144K  4096(132K) 
+    8198   3 c/boot/devc-sermx1  10r NANOSLEEP        104K  144K  8192(132K) 
+            libc.so.3          @ 1000000             456K   12K
+            libham.so.2        @78000000              36K  4096
+            /dev/mem           @28000000 (43f90000)        4096
+   32773   1 c/boot/devc-sermx1  24r RECEIVE          104K  144K  8192(132K)*
+   32773   2 c/boot/devc-sermx1  10r NANOSLEEP        104K  144K  4096(132K) 
+   32773   3 c/boot/devc-sermx1  10r NANOSLEEP        104K  144K  8192(132K) 
+            libc.so.3          @ 1000000             456K   12K
+            libham.so.2        @78000000              36K  4096
+            /dev/mem           @28000000 (5000c000)        4096
+   57351   1 proc/boot/ipc       20r NANOSLEEP         88K  144K  8192(132K)*
+   57351   2 proc/boot/ipc       20r REPLY             88K  144K  4096(132K) 
+   57351   3 proc/boot/ipc       21r CONDVAR           88K  144K  4096(132K) 
+   57351   4 proc/boot/ipc       20r NANOSLEEP         88K  144K  4096(132K) 
+   57351   5 proc/boot/ipc       10r RECEIVE           88K  144K  4096(132K) 
+   57351   6 proc/boot/ipc       10r RECEIVE           88K  144K  4096(132K) 
+   57351   9 proc/boot/ipc       10r RECEIVE           88K  144K  4096(132K) 
+   57351  10 proc/boot/ipc       10r RECEIVE           88K  144K  4096(132K) 
+   57351  11 proc/boot/ipc       10r RECEIVE           88K  144K  4096(132K) 
+            libc.so.3          @ 1000000             456K   12K
+   57352   1 oot/board_hardware  10r RECEIVE           68K  112K  8192(132K)*
+            libc.so.3          @ 1000000             456K   12K
+            /dev/mem           @28000000 (43fac000)        4096
+            /dev/mem           @28001000 (53fcc000)        4096
+            /dev/mem           @28002000 (53fd0000)        4096
+            /dev/mem           @28003000 (53fa4000)        4096
+            /dev/mem           @28004000 (43f88000)        4096
+            /dev/mem           @28005000 (43f88000)        4096
+            /dev/mem           @28006000 (43f98000)        4096
+   94217   1 proc/boot/CANsole   10r NANOSLEEP         72K  108K  8192(132K)*
+   94217   2 proc/boot/CANsole   10r RECEIVE           72K  108K  4096(132K) 
+   94217   3 proc/boot/CANsole   10r SEM               72K  108K  4096(132K) 
+   94217   4 proc/boot/CANsole   10r RECEIVE           72K  108K  8192(132K) 
+   94217   5 proc/boot/CANsole   10r RECEIVE           72K  108K  4096(132K) 
+            libc.so.3          @ 1000000             456K   12K
+  110602   1 proc/boot/tinit     10r REPLY            8192  108K  8192(132K)*
+            libc.so.3          @ 1000000             456K   12K
+  122892   1 bin/sh              10r SIGSUSPEND       272K  160K   12K(132K)*
+            libc.so.3          @ 1000000             456K   12K
+  122893   1 bin/sh              10r REPLY            272K  160K  8192(132K)*
+            libc.so.3          @ 1000000             456K   12K
+  184331   1 c/boot/io-usb_swsa  10r SIGWAITINFO      156K  400K  8192(132K)*
+  184331   2 c/boot/io-usb_swsa  21r RECEIVE          156K  400K   4096(20K) 
+  184331   3 c/boot/io-usb_swsa  10r NANOSLEEP        156K  400K 4096(1152K) 
+  184331   4 c/boot/io-usb_swsa  10r RECEIVE          156K  400K 8192(1152K) 
+  184331   5 c/boot/io-usb_swsa  21r RECEIVE          156K  400K   4096(20K) 
+  184331   6 c/boot/io-usb_swsa  21r RECEIVE          156K  400K   4096(20K) 
+  184331   7 c/boot/io-usb_swsa  10r RECEIVE          156K  400K   4096(20K) 
+  184331   8 c/boot/io-usb_swsa  10r NANOSLEEP        156K  400K   8192(20K) 
+  184331   9 c/boot/io-usb_swsa  21r RECEIVE          156K  400K   4096(20K) 
+  184331  10 c/boot/io-usb_swsa  21r RECEIVE          156K  400K   4096(20K) 
+            libc.so.3          @ 1000000             456K   12K
+            -ehci-mx31_swsa.so @78000000              36K  4096
+            /dev/mem           @28000000 (43f88000)        8192
+  208911   1 proc/boot/updater   10r RECEIVE          100K  120K  8192(132K)*
+  208911   2 proc/boot/updater   10r RECEIVE          100K  120K  4096(132K) 
+  208911   3 proc/boot/updater   10r NANOSLEEP        100K  120K  8192(132K) 
+            libc.so.3          @ 1000000             456K   12K
+            libham.so.2        @78000000              36K  4096
+922423312   1 oc/boot/devb-umass  10r SIGWAITINFO       28K 2456K  8192(132K)*
+922423312   2 oc/boot/devb-umass  21r REPLY             28K 2456K   4096(20K) 
+922423312   3 oc/boot/devb-umass  21r RECEIVE           28K 2456K    20K(24K) 
+922423312   5 oc/boot/devb-umass  21r RECEIVE           28K 2456K    20K(24K) 
+922423312   6 oc/boot/devb-umass  21r RECEIVE           28K 2456K    20K(24K) 
+922423312   7 oc/boot/devb-umass  21r RECEIVE           28K 2456K    20K(24K) 
+922423312   8 oc/boot/devb-umass  10r RECEIVE           28K 2456K    20K(24K) 
+922423312   9 oc/boot/devb-umass  21r RECEIVE           28K 2456K    20K(24K) 
+            libc.so.3          @ 1000000             456K   12K
+            libusbdi.so.2      @78000000              40K  4096
+            cam-disk.so        @7800b000             8192  8192
+            libcam.so.2        @78010000              68K  8192
+            io-blk.so          @78030000             484K   16K
+1130999822   1 proc/boot/waitfor   10r RECEIVE           20K  104K  8192(132K)*
+            libc.so.3          @ 1000000             456K   12K
+1131003921   1 bin/pidin           10r REPLY             56K  152K  8192(132K)*
+            libc.so.3          @ 1000000             456K   12K
+# 
+
+# fs-etfs-swsa_2048
+fs-etfs-swsa_2048
+
+fs-etfs-swsa_2048: NAND ID: 0x2C B1 80 55 82
+# 
+
+# fs-etfs-swsa_2048 -i
+fs-etfs-swsa_2048 -i
+
+fs-etfs-swsa_2048: illegal option -- i
+# 
+
+# fs-etfs-swsa_2048 -f
+fs-etfs-swsa_2048 -f
+
+fs-etfs-swsa_2048: option requires an argument -- f
+# 
+
+# fs-etfs-swsa_2048 -Duse
+fs-etfs-swsa_2048 -Duse
+
+Device specific options:
+  -D use,addr=xxxx,ecc=xxx
+# 
+
+# fs-etfs-swsa_2048 -D
+fs-etfs-swsa_2048 -D
+
+fs-etfs-swsa_2048: option requires an argument -- D
+# 
+
+# fs-etfs-swsa_2048 -Duse
+fs-etfs-swsa_2048 -Duse
+
+Device specific options:
+  -D use,addr=xxxx,ecc=xxx
+# 
+
+# fs-etfs-swsa_2048 -z
+fs-etfs-swsa_2048 -z
+
+2001
+# 
+
+# fs-etfs-swsa_2048 -e
+fs-etfs-swsa_2048 -e
+
+fs-etfs-swsa_2048: NAND ID: 0x2C B1 80 55 82
+fs-etfs-swsa_2048: devio_readtrans:   BADBLK on cluster 0. Status = 0x0, Status 2 = 0x0.
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8448 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8512 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8576 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8640 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8704 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8768 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8832 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8896 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8960 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9024 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9088 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9152 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9216 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9280 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9344 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9408 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9472 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9536 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9600 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 9664 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9728 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9792 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9856 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9920 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 9984 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 10048 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10112 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10176 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10240 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10304 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 10368 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10432 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10496 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10560 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10624 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10688 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10752 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 10816 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10880 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 10944 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11008 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11072 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11136 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11200 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11264 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 11328 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11392 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11456 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11520 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11584 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11648 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11712 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11840 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11904 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 11968 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12032 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12096 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12160 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12224 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12288 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12352 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12416 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 12608 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12672 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12736 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12800 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12864 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12928 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 12992 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13056 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13120 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13184 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13248 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13312 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13376 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13440 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13504 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13568 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13632 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13696 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13760 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13824 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13888 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 13952 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14016 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 14080 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14144 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14208 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14272 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14336 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14400 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14464 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14528 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14592 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14656 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14720 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14784 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14848 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14912 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 14976 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 15040 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15104 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15168 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15232 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15296 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15424 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15488 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15552 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15616 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15680 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15744 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15808 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15872 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 15936 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16000 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16064 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16192 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16256 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16320 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16384 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16448 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16512 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16576 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16768 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16832 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16896 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 16960 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17024 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17088 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17152 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17216 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17280 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 17344 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17408 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17472 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17536 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17600 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17664 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17728 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17792 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17856 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17920 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 17984 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18048 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18112 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18176 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18240 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18368 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18432 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 18496 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18560 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 18624 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18688 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18752 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18816 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18880 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 18944 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19008 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19072 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19136 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19200 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19264 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 19328 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19392 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19456 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19520 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19584 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19648 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19712 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19776 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19840 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19904 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 19968 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20032 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20096 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20160 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20224 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20288 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20352 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20416 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20480 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20544 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20608 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20736 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20800 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20864 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20928 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 20992 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21056 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 21120 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21184 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21248 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21312 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21376 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21440 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21504 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21568 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21632 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21696 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21760 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21824 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 21952 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22016 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22080 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22144 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22208 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22272 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22336 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22400 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 22464 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22528 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22592 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22656 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22784 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 22848 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22912 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 22976 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23104 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23168 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 23232 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23296 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23360 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23424 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23488 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23552 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23616 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23680 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23744 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23808 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23872 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 23936 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24064 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24128 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24192 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 24256 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24320 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24384 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24512 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 24576 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24640 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24704 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24768 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24832 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24896 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 24960 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25024 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25088 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25152 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25216 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25280 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25344 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25408 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25472 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 25536 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 25600 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25664 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25728 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25792 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25856 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25920 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 25984 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26048 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26112 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26176 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26240 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26304 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26368 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26432 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26496 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26560 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 26688 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26752 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26816 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26880 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 26944 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27008 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27072 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27136 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27200 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27264 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27328 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27392 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27456 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27520 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27584 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 27648 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27712 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27776 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27840 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27904 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 27968 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 28032 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28096 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28160 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28224 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28288 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28352 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28416 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28480 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28544 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28608 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28672 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28736 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28800 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28864 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28928 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 28992 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29056 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29120 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29184 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29248 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29312 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29376 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29504 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29568 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29632 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29696 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29760 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29824 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29888 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 29952 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30016 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30080 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30144 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30208 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30272 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30336 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30400 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30464 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30528 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30592 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30656 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 30720 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30784 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30848 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30912 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 30976 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31040 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31104 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31168 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31232 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31296 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31360 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31424 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31488 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31552 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31616 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31744 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31808 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31872 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 31936 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32000 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 32064 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32128 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32192 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32256 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32320 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32384 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32448 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32512 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32640 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32704 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32768 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32832 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 32896 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 32960 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 33024 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33088 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33216 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33280 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33344 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 33408 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33472 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 33536 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33600 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33728 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33792 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 33856 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 33920 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 33984 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 34048 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 34112 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 34176 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 34240 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 34304 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 34368 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 34432 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 34496 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 34560 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 34624 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 34688 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 34752 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 34816 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 34880 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 34944 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35008 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 35072 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35136 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35200 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35264 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35328 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35392 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35456 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 35584 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35648 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35712 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 35840 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 35904 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 35968 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 36032 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 36096 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 36224 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 36288 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 36352 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 36416 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 36480 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 36544 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 36608 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 36672 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 36736 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 36800 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 36928 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 36992 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37056 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37120 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37184 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 37248 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 37312 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37376 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37440 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37504 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 37568 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37632 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37696 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37760 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37888 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 37952 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38016 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38144 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38208 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 38272 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38336 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38400 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38464 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38528 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 38592 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38656 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38720 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38784 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 38912 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39040 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39104 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 39168 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39232 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39296 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 39360 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 39424 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 39488 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 39552 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39616 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39680 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39744 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39808 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39872 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 39936 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 40000 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 40128 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 40192 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 40256 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 40320 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 40384 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 40448 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 40512 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 40576 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 40640 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 40704 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 40768 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 40896 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 41024 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 41088 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 41152 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 41280 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 41344 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 41408 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 41536 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 41792 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 41920 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 41984 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 42048 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 42176 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 42240 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 42304 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 42560 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 42624 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 42688 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 42880 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43072 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43136 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43264 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43328 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43392 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 43456 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43520 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43648 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43712 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43776 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 43840 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 44032 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 44160 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 44288 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 44352 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 44544 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 44608 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 44864 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 44928 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 45440 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 45568 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 45696 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 45824 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 45888 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 45952 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 46016 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 46080 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 46464 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 46528 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 46720 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 47040 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 47168 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 47296 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 47424 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 47488 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 47616 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 47680 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 47744 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 47808 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 47936 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 48064 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 48128 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 48192 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 48256 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 48384 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 48512 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 50432 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 51008 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 52992 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 54016 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 54144 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 54656 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 55296 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 55488 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 55616 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 55744 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 56256 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 56320 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 56384 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 57152 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 58176 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 58240 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 58816 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 58944 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 59072 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 59840 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 60096 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 60352 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 62720 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 62912 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 63808 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64576 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64704 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64768 (e8)
+# 
+
+# ls
+ls
+
+bin     dev     lib     proc    tmp     usr
+# 
+
+# cd dev
+cd dev
+
+# 
+
+# ls
+ls
+
+board_variant      io-usb             ser1               swsa
+board_version      ipc                ser3               text
+console            mem                shmem              tty
+etfs1              name               slog               tymem
+etfs2              null               stderr             zero
+etfs3              pipe               stdin
+etfs4              sem                stdout
+# 
+
+# etfs1
+etfs1
+
+        sh[ 1:122892  ]comexec                                      exec.c@727  | etfs1: cannot execute - Permission denied
+sh:         sh[ 1:122892  ]comexec                                      exec.c@727  | etfs1: cannot execute - Permission denied
+# 
+
+# cd etfs1
+cd etfs1
+
+        sh[ 1:122892  ]c_cd                                        c_ksh.c@143  | /dev/etfs1 - Not a directory
+sh: cd:         sh[ 1:122892  ]c_cd                                        c_ksh.c@143  | /dev/etfs1 - Not a directory
+# 
+
+# shutdown
+shutdown
+
+Shutting down apps...
+Shutting down daemons...
+Shutting down filesystems...
+
+
+QNX/Neutrino IPL for MCIMX31 SWSA FDM
+SVN Revision:     328169
+Checked-out from: http://subversion.swsa.com.au/repos/Ford_123_ICC/FDM/trunk/Software/workspaces/trunk/Project_Workspace_iMX31/core/ipl
+
+ i.MX silicon revision: 0x29 
+ i.MX product revision: 0x08 
+
+ Mobile DDR Delay (DQS/DQ):                0x2C0000
+ Mobile DDR Delay Debug Register (DQS/DQ): 0x0000DF
+
+
+NAND ID: 2C B1 80 55 82
+Reading startup header from NAND at  1 Mb
+Reading startup header from NAND at  2 Mb
+Reading startup header from NAND at  3 Mb
+Reading startup header from NAND at  4 Mb
+Reading startup header from NAND at  5 Mb
+Reading startup header from NAND at  6 Mb
+Reading startup header from NAND at  7 Mb
+Reading startup header from NAND at  8 Mb
+Reading startup header from NAND at  9 Mb
+Reading startup header from NAND at 10 Mb
+Reading startup header from NAND at 11 Mb
+Reading startup header from NAND at 12 Mb
+Reading startup header from NAND at 13 Mb
+Reading startup header from NAND at 14 Mb
+Reading startup header from NAND at 15 Mb
+
+
+No valid kernel image found
+

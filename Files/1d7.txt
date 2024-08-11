@@ -1,0 +1,9 @@
+candump
+enabling Logfile 'candump-0000-00-00_000000.log'
+    can0  RX - -  1D7   [7]  remote request
+
+
+cansniffer
+    93|ms | -- ID -- | data ...     < can0 # l=20 h=100 t=0 slots=2 >
+    99999 | ---- 1D7 | FE 9D DF E6 63 F4 B6    ....c..
+    99999 | 0F745770 | 6B FB 3E B9 B9 DA DD DE k.>.....

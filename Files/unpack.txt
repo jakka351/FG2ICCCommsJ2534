@@ -1,0 +1,56 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+static unsigned char buf [1024 * 512];
+static unsigned char buf2 [32];
+
+void main () {
+    int i = 1;
+    int j;
+    unsigned int l = 0;
+    unsigned int q = 0; // 64KB Quadrant
+    unsigned int t;
+    FILE * f = fopen ("..\\8R29-14D017-AC.PHF", "rb");
+    FILE * o = fopen ("..\\8R29-14D017-AC.BIN", "wb");
+
+    while (fgetc (f) != '$') {}
+    fgetc (f); // remove nul
+    buf [4] = 0x00;
+    while (buf [4] != 0x01) {
+        printf ("L %08X ", l);
+        fread (buf, 1, 5, f);
+        j = 0;
+        while (j < 5) {
+            printf ("%02X ", buf [j++]);
+        }
+        i = buf [1]; // size
+        fread (buf2, 1, i, f);
+        if (buf [4] == 0x02) {
+            j = 0;
+            while (j < i) {
+                printf ("%02X ", buf2 [j++]);
+            }
+            q = (buf2 [0] << 12) | (buf2 [1] << 4);
+        } else if (buf [4] == 0x00) {
+            t = q + (buf [2] << 8) | buf [3];
+            if (t != l) {
+                printf ("BREAK %08X ", t - l);
+                j = t - l;
+                while (j > 0) {
+                    buf [0] = 0xFF;
+                    fwrite (buf, 1, 1, o);
+                    l++;
+                    j--;
+                }
+            }
+            fwrite (buf2, 1, i, o);
+            l += i;
+        }
+        printf ("%02X\n", fgetc (f)); // Print checksum
+    }
+
+    fclose (o);
+    fclose (f);
+    return;
+}

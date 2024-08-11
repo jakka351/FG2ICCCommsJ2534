@@ -1,0 +1,134 @@
+
+
+QNX/Neutrino IPL for MCIMX31 SWSA FDM
+SVN Revision:     328169
+Checked-out from: http://subversion.swsa.com.au/repos/Ford_123_ICC/FDM/trunk/Software/workspaces/trunk/Project_Workspace_iMX31/core/ipl
+
+ i.MX silicon revision: 0x29 
+ i.MX product revision: 0x08 
+
+ Mobile DDR Delay (DQS/DQ):                0x2C0000
+ Mobile DDR Delay Debug Register (DQS/DQ): 0x0000E2
+
+
+NAND ID: 2C B1 80 55 02
+Reading startup header from NAND at  1 Mb
+Using NAND 4-bit ECC
+Copying pages ...4-bit ECC error  block:page 0x0008:3B   status 0xE8
+4-bit ECC error  block:page 0x0008:3F   status 0xE8
+..4-bit ECC error  block:page 0x0009:18   status 0xE8
+.......4-bit ECC error  block:page 0x000B:03   status 0xE8
+4-bit ECC error  block:page 0x000B:08   status 0xE8
+..4-bit ECC error  block:page 0x000B:28   status 0xE8
+..4-bit ECC error  block:page 0x000C:03   status 0xE8
+.4-bit ECC error  block:page 0x000C:16   status 0xE8
+.4-bit ECC error  block:page 0x000C:22   status 0xE8
+4-bit ECC error  block:page 0x000C:2C   status 0xE8
+...4-bit ECC error  block:page 0x000D:11   status 0xE8
+.....4-bit ECC error  block:page 0x000E:25   status 0xE8
+.4-bit ECC error  block:page 0x000E:3F   status 0xE8
+...4-bit ECC error  block:page 0x000F:2A   status 0xE8
+4-bit ECC error  block:page 0x000F:2C   status 0xE8
+.4-bit ECC error  block:page 0x000F:3F   status 0xE8
+.4-bit ECC error  block:page 0x0010:0E   status 0xE8
+..4-bit ECC error  block:page 0x0010:23   status 0xE8
+.4-bit ECC error  block:page 0x0010:33   status 0xE8
+4-bit ECC error  block:page 0x0010:37   status 0xE8
+.........4-bit ECC error  block:page 0x0013:07   status 0xE8
+4-bit ECC error  block:page 0x0013:0E   status 0xE8
+.4-bit ECC error  block:page 0x0013:19   status 0xE8
+.4-bit ECC error  block:page 0x0013:26   status 0xE8
+....4-bit ECC error  block:page 0x0014:30   status 0xE8
+...4-bit ECC error  block:page 0x0015:17   status 0xE8
+.4-bit ECC error  block:page 0x0015:26   status 0xE8
+.4-bit ECC error  block:page 0x0015:3D   status 0xE8
+..4-bit ECC error  block:page 0x0016:16   status 0xE8
+4-bit ECC error  block:page 0x0016:17   status 0xE8
+......4-bit ECC error  block:page 0x0017:37   status 0xE8
+...4-bit ECC error  block:page 0x0018:28   status 0xE8
+....4-bit ECC error  block:page 0x0019:25   status 0xE8
+..4-bit ECC error  block:page 0x001A:01   status 0xE8
+4-bit ECC error  block:page 0x001A:0E   status 0xE8
+....4-bit ECC error  block:page 0x001B:04   status 0xE8
+4-bit ECC error  block:page 0x001B:0E   status 0xE8
+..4-bit ECC error  block:page 0x001B:2D   status 0xE8
+..4-bit ECC error  block:page 0x001C:08   status 0xE8
+..4-bit ECC error  block:page 0x001C:23   status 0xE8
+4-bit ECC error  block:page 0x001C:28   status 0xE8
+..4-bit ECC error  block:page 0x001D:09   status 0xE8
+.4-bit ECC error  block:page 0x001D:1D   status 0xE8
+..4-bit ECC error  block:page 0x001D:3B   status 0xE8
+......4-bit ECC error  block:page 0x001F:12   status 0xE8
+4-bit ECC error  block:page 0x001F:15   status 0xE8
+4-bit ECC error  block:page 0x001F:1B   status 0xE8
+.4-bit ECC error  block:page 0x001F:2F   status 0xE8
+..4-bit ECC error  block:page 0x0020:03   status 0xE8
+.....
+
+Peripheral clock source = 400000000  ipg_clk
+Peripheral clock        =  66666666  PDR0 = 0xff850a50
+
+[1B][36m  Welcome to SWSAs FDM  [1B][m
+
+Starting etfs driver...
+fs-etfs-swsa_2048: NAND ID: 0x2C B1 80 55 82
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8448 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8512 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8513 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8514 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8515 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8516 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8517 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8518 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8519 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8520 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8521 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8522 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8523 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8524 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8525 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8526 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8527 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8528 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8529 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8530 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 8531 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8545 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8546 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8547 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8548 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8549 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8550 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 8551 (e1)
+
+<removed ~42k lines of similar messages>
+
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64616 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64621 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64622 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64623 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64624 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64625 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64626 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64627 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64628 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64629 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   DATAERR ecc cluster 64630 (e1)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64631 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64634 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64674 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64704 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64736 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64768 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 64802 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 65221 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 65224 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 65225 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 65226 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 65239 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 65256 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 65452 (e8)
+fs-etfs-swsa_2048: devio_readtrans:   ECCERR  ecc cluster 65460 (e8)
+fs-etfs-swsa_2048: devio_readcluster:  ECCERR  cluster 48384 (0xe8)
+fs-etfs-swsa_2048: No filesystem detected. Entering stopped mode.
+fs-etfs-swsa_2048: Unable to initialise ETFS systems (Corrupted file system detected)
