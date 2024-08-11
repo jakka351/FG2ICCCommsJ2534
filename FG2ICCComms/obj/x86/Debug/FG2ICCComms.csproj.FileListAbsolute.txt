@@ -1,0 +1,9 @@
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\obj\x86\Debug\FG2ICCComms.csproj.AssemblyReference.cache
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\obj\x86\Debug\FG2ICCComms.Form1.resources
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\obj\x86\Debug\FG2ICCComms.csproj.GenerateResource.cache
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\obj\x86\Debug\FG2ICCComms.csproj.CoreCompileInputs.cache
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\bin\Debug\FG2ICCComms.exe.config
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\bin\Debug\FG2ICCComms.exe
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\bin\Debug\FG2ICCComms.pdb
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\obj\x86\Debug\FG2ICCComms.exe
+C:\Users\admin\Source\Repos\FG2ICCComms\FG2ICCComms\obj\x86\Debug\FG2ICCComms.pdb
